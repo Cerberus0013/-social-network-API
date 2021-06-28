@@ -5,8 +5,8 @@ const {
   getUserById,
   updateUser,
   createUser,
-  deleteUser, 
-}
+  deleteUser,
+} = require("../../controllers/userController");
 
 router
      .route('/')
