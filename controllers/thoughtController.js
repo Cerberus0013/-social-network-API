@@ -2,7 +2,7 @@ const { Thought } = require('../models')
 
 const thoughtController = {
   
-    getAllThought(req, res) {
+    getAllThoughts(req, res) {
     Thought.find({})
       .sort({ _id: -1 })
       .selected("_v")
@@ -59,6 +59,9 @@ const thoughtController = {
       .catch((err) => res.status(400).json(err));
   },
 };
+
+
+
 
 
 
